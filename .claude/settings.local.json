@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash scaffold.sh --list)",
+      "Bash(bash scaffold.sh --help)",
+      "Bash(git init:*)"
+    ]
+  }
+}

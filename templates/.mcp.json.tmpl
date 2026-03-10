@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "cloud-run-logging": {
+      "command": "node",
+      "args": ["{{HOME}}/cloud-run-logging-mcp/server.js"],
+      "env": {
+        "GCP_PROJECT_ID": "{{PROJECT_ID}}",
+        "CLOUD_RUN_SERVICE": "{{SERVICE_NAME}}",
+        "GOOGLE_APPLICATION_CREDENTIALS": "{{HOME}}/gcp-service-account-key/{{PROJECT_ID}}.json"
+      }
+    }
+  }
+}

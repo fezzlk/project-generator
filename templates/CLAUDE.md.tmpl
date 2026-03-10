@@ -1,0 +1,23 @@
+# {{PROJECT_NAME}}
+
+## プロジェクト情報
+
+- **GCPプロジェクトID**: {{PROJECT_ID}}
+- **Cloud Runサービス名**: {{SERVICE_NAME}}
+- **リージョン**: {{REGION}}
+
+## デプロイ
+
+`main` ブランチへの push で Cloud Build が自動デプロイを実行する。
+
+```bash
+git push origin main
+```
+
+## ログ確認
+
+Cloud Run のログは cloud-run-logging MCP を使って確認できる。
+
+## 出力ファイル
+
+調査報告・スクリプトなどは `~/ai-output/{{PROJECT_NAME}}/` に保存すること。
