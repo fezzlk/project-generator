@@ -1,4 +1,4 @@
-# common - プロジェクト基盤テンプレート
+# project-generator - プロジェクト基盤テンプレート
 
 Google Cloud（Cloud Run, Firestore, Firebase Auth）上で運用するWebプロダクトのインフラ基盤を1コマンドで生成するテンプレート。
 
