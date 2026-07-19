@@ -27,4 +27,4 @@ common/
 - **冪等なセットアップ**: 全スクリプトは再実行しても問題なし
 - **対話式**: 必要な情報を対話で収集し、テンプレート変数を自動置換
 
-詳細は [docs/setup-guide.md](docs/setup-guide.md) を参照。
+詳細は [docs/setup-guide.md](docs/setup-guide.md) を参照。個人プロジェクトを GitHub / pico / Linear へ登録する手順は [docs/pico-linear-registration.md](docs/pico-linear-registration.md) を参照。
