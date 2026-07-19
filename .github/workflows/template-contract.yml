@@ -1,0 +1,25 @@
+name: Template contract
+
+on:
+  pull_request:
+    paths: ['scaffold.sh', 'templates/**', 'scripts/**', '.github/workflows/template-contract.yml']
+  push:
+    branches: [main]
+    paths: ['scaffold.sh', 'templates/**', 'scripts/**', '.github/workflows/template-contract.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: project-generator-template-contract
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/verify-template-contract.sh
+      - run: bash -n scaffold.sh scripts/*.sh
